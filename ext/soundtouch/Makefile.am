@@ -2,7 +2,6 @@ plugin_LTLIBRARIES = libgstsoundtouch.la
 
 libgstsoundtouch_la_SOURCES = \
 	plugin.c \
-	gstpitch.cc \
 	gstbpmdetect.cc
 
 libgstsoundtouch_la_CFLAGS = $(GST_PLUGINS_BASE_CFLAGS) $(GST_BASE_CFLAGS) $(GST_CFLAGS) $(SOUNDTOUCH_CFLAGS)
@@ -11,4 +10,4 @@ libgstsoundtouch_la_LIBADD = $(GST_PLUGINS_BASE_LIBS) -lgstaudio-$(GST_MAJORMINO
 libgstsoundtouch_la_LDFLAGS = $(GST_PLUGIN_LDFLAGS)
 libgstsoundtouch_la_LIBTOOLFLAGS = --tag=disable-static
 
-noinst_HEADERS = gstpitch.hh gstbpmdetect.hh
+noinst_HEADERS = gstbpmdetect.hh #gstpitch.hh
