@@ -1,6 +1,6 @@
 if USE_SOUNDTOUCH
 
-GST_SOUNDTOUCH_TESTS = pitch-test
+GST_SOUNDTOUCH_TESTS = #pitch-test
 
 pitch_test_SOURCES = pitch-test.c
 pitch_test_CFLAGS  = $(GST_CONTROLLER_CFLAGS)
